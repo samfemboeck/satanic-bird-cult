@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="32" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="41" nextobjectid="218">
+ <tileset firstgid="1" name="0x72_16x16DungeonTileset_walls.v1" tilewidth="16" tileheight="16" tilecount="160" columns="16">
+  <image source="dungeon/0x72_16x16DungeonTileset.v1.png" width="256" height="160"/>
+ </tileset>
+ <tileset firstgid="161" name="corner_pentagram" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="dungeon/tileset-corner-pentagram.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="177" name="0x72_16x16DungeonTileset.v2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="dungeon/0x72_16x16DungeonTileset.v2.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="433" name="pentagram" tilewidth="64" tileheight="48" tilecount="1" columns="1">
+  <image source="Textures/pentagram.png" width="64" height="48"/>
+ </tileset>
+ <tileset firstgid="434" name="Pentagram" tilewidth="16" tileheight="16" tilecount="12" columns="4">
+  <image source="Textures/pentagram.png" width="64" height="48"/>
+ </tileset>
+ <tileset firstgid="446" name="Corner Pentagram Inverted" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="dungeon/tileset-corner-pentagram-inverted.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="462" name="tiles-inverted" tilewidth="16" tileheight="16" tilecount="2" columns="1">
+  <image source="dungeon/tiles-inverted.png" width="16" height="32"/>
+ </tileset>
+ <tileset firstgid="464" name="Character" tilewidth="16" tileheight="16" tilecount="16" columns="8">
+  <image source="Textures/character.png" width="128" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="200"/>
+    <frame tileid="2" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="3" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="4">
+   <animation>
+    <frame tileid="4" duration="200"/>
+    <frame tileid="6" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="5">
+   <animation>
+    <frame tileid="5" duration="200"/>
+    <frame tileid="7" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="8">
+   <animation>
+    <frame tileid="8" duration="200"/>
+    <frame tileid="10" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="9">
+   <animation>
+    <frame tileid="9" duration="200"/>
+    <frame tileid="11" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="12">
+   <animation>
+    <frame tileid="12" duration="200"/>
+    <frame tileid="14" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="13">
+   <animation>
+    <frame tileid="13" duration="200"/>
+    <frame tileid="15" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="480" name="bat" tilewidth="32" tileheight="32" tilecount="16" columns="4">
+  <image source="textures/bat.png" width="128" height="128"/>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="5">
+   <animation>
+    <frame tileid="5" duration="200"/>
+    <frame tileid="6" duration="200"/>
+    <frame tileid="7" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="9">
+   <animation>
+    <frame tileid="9" duration="200"/>
+    <frame tileid="10" duration="200"/>
+    <frame tileid="11" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="13">
+   <animation>
+    <frame tileid="13" duration="200"/>
+    <frame tileid="14" duration="200"/>
+    <frame tileid="15" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="496" name="shadowbird" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="textures/shadowbird.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="497" name="blood-splatter" tilewidth="32" tileheight="32" tilecount="5" columns="5">
+  <image source="textures/blood-splatter.png" width="160" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="200"/>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="502" name="sword" tilewidth="6" tileheight="13" tilecount="1" columns="1">
+  <image source="textures/sword.png" width="6" height="13"/>
+ </tileset>
+ <tileset firstgid="503" name="aimblue" tilewidth="128" tileheight="16" tilecount="1" columns="1">
+  <image source="textures/aimblue.png" width="128" height="16"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="504" name="pentagram-small" tilewidth="54" tileheight="54" tilecount="10" columns="10">
+  <image source="textures/pentagram-small.png" width="540" height="54"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="200"/>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="200"/>
+    <frame tileid="5" duration="200"/>
+    <frame tileid="6" duration="200"/>
+    <frame tileid="7" duration="200"/>
+    <frame tileid="8" duration="200"/>
+    <frame tileid="9" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="514" name="candle" tilewidth="16" tileheight="23" tilecount="9" columns="9">
+  <image source="textures/candle.png" width="144" height="23"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="200"/>
+    <frame tileid="5" duration="200"/>
+    <frame tileid="6" duration="200"/>
+    <frame tileid="7" duration="200"/>
+    <frame tileid="8" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="17" name="Background" width="32" height="18">
+  <properties>
+   <property name="renderLayer" value="0"/>
+  </properties>
+  <data encoding="csv">
+277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,
+277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,277,
+277,277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,277,277,277,277,277,277,277,277,277,277,
+277,277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,277,277,0,0,0,0,277,277,277,277,277,
+277,277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,277,277,
+277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,277,277,
+277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,0,0,0,0,227,293,0,0,0,0,0,0,0,0,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,0,0,0,0,0,0,0,0,0,0,0,227,0,0,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,0,0,0,0,0,0,293,293,293,293,293,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,
+277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,
+277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,
+277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,
+277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,
+277,277,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,277,277,277
+</data>
+ </layer>
+ <layer id="10" name="Base" width="32" height="18">
+  <properties>
+   <property name="renderLayer" value="1"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,178,0,0,0,
+0,0,163,194,194,18,18,18,229,18,18,231,18,18,229,18,18,18,18,231,18,18,18,229,18,18,18,194,194,447,0,0,
+0,163,167,194,194,194,194,194,194,194,194,247,194,194,194,194,194,194,194,247,194,194,194,194,194,194,194,194,194,451,447,0,
+462,167,171,210,210,210,210,210,210,210,210,263,210,210,210,210,210,210,210,263,210,210,210,210,210,210,210,210,210,455,451,463,
+462,171,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,455,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463,
+462,403,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,227,463
+</data>
+ </layer>
+ <layer id="14" name="Pentagram Big" width="32" height="18">
+  <properties>
+   <property name="renderLayer" value="2"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,434,435,436,437,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,438,439,440,441,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,442,443,444,445,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Deco" width="32" height="18">
+  <properties>
+   <property name="renderLayer" value="3"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,226,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="39" name="No Point Wall" visible="0">
+  <object id="191" name="Collider" type="AABBCollider" x="-3.83333" y="299.333" width="523" height="14.5">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+  </object>
+  <object id="192" name="No Point Wall" type="GameObject" x="138" y="306.667">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="194" name="Rb" type="RigidBody" x="138" y="304">
+   <properties>
+    <property name="ignore" value="wall,birdWall"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isKinematic" value="true"/>
+    <property name="physicsLayer" value="noPointWall"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="38" name="Bird Wall">
+  <object id="184" name="Top Collider" type="AABBCollider" x="45.0909" y="21.0909" width="419.636" height="10.5455">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="185" name="Left Edge Collider" type="PolygonCollider" x="48" y="26.7273">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <polygon points="0,0 -36,35.4545 -36.5455,20 1.09091,-17.1818"/>
+  </object>
+  <object id="186" name="Left Collider" type="AABBCollider" x="-3" y="45.25" width="6.75" height="250">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="187" name="Left Collider" type="AABBCollider" x="508.208" y="37.9924" width="6.75" height="250">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="188" name="Right Edge Collider" type="PolygonCollider" x="462.25" y="25.5">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <polygon points="0,0 38.375,38.375 39.5,19.375 -1.375,-17.25"/>
+  </object>
+  <object id="189" name="Rb" type="RigidBody" x="184" y="26.5">
+   <properties>
+    <property name="ignore" value="wall"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isKinematic" value="true"/>
+    <property name="mass" value="1"/>
+    <property name="physicsLayer" value="birdWall"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="190" name="Bird Wall" type="GameObject" x="184" y="25">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="37" name="Wall">
+  <object id="175" name="Left Collider" type="AABBCollider" x="-0.25" y="74.5" width="16.5" height="215">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="176" name="Right Collider" type="AABBCollider" x="496.5" y="73.5" width="16.5" height="215">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="177" name="Left Edge Collider" type="PolygonCollider" x="14.2727" y="80.0909">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <polygon points="0,0 35.7273,-35 35.8182,-67.3636 -0.636364,-31.0909"/>
+  </object>
+  <object id="180" name="Top Collider" type="AABBCollider" x="46.7273" y="12.1818" width="417.455" height="34.7273">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="181" name="Wall" type="GameObject" x="253.333" y="30">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="182" name="Rb" type="RigidBody" x="252.667" y="30">
+   <properties>
+    <property name="ignore" value="birdWall"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isKinematic" value="true"/>
+    <property name="physicsLayer" value="wall"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="183" name="Right Edge Collider" type="PolygonCollider" x="462" y="45.0909">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <polygon points="0,0 36.1818,36 37.4545,5.45455 0.363636,-31.0909"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="40" name="Candles">
+  <object id="201" name="candle8" type="Animation" gid="514" x="222.439" y="190.909" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="202" name="candle7" type="Animation" gid="514" x="273.439" y="192" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="203" name="candle6" type="Animation" gid="514" x="248.03" y="197.909" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="204" name="candle5" type="Animation" gid="514" x="222.394" y="157.023" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="205" name="candle4" type="Animation" gid="514" x="274.189" y="158.205" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="206" name="candle3" type="Animation" gid="514" x="247.712" y="150.773" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="207" name="candle2" type="Animation" gid="514" x="210.848" y="175.023" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="208" name="candle1" type="Animation" gid="514" x="285.371" y="174.932" width="16" height="23">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="209" name="Candles" type="GameObject" x="255.333" y="168.667">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="210" name="renderer8" type="AnimationRenderer" x="256" y="165">
+   <properties>
+    <property name="activeAnimation" value="candle8"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="211" name="renderer7" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle7"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="212" name="renderer6" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle6"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="213" name="renderer5" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle5"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="214" name="renderer4" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle4"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="215" name="renderer3" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle3"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="216" name="renderer2" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle2"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="217" name="renderer1" type="AnimationRenderer" x="258.333" y="167.667">
+   <properties>
+    <property name="activeAnimation" value="candle1"/>
+    <property name="drawLayer" value="candles"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="36" name="Aim">
+  <object id="173" name="Aim" type="SpriteRenderer" gid="503" x="132.5" y="111.375" width="128" height="16">
+   <properties>
+    <property name="drawLayer" value="aim"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+  </object>
+  <object id="174" name="Aim" type="GameObject" x="140.5" y="103.375">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#3bff00" id="27" name="Player">
+  <object id="124" name="AnimRend" type="AnimationRenderer" x="139.791" y="97.2201" visible="0">
+   <properties>
+    <property name="activeAnimation" value="idle_south"/>
+    <property name="drawLayer" value="player"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="Rb" type="RigidBody" x="140.291" y="97.2201" visible="0">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isKinematic" value="false"/>
+    <property name="physicsLayer" value="player"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Player" type="GameObject" x="140.291" y="96.7201">
+   <properties>
+    <property name="isDebugDraw" value="true"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="PlayerCmp" type="Player" x="140.518" y="96.4019" visible="0">
+   <point/>
+  </object>
+  <object id="137" name="AABBColl" type="AABBCollider" x="135.737" y="97.356" width="9.47826" height="9.47826">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+  </object>
+  <object id="164" name="idle_south" type="Animation" gid="464" x="128" y="110" width="25" height="25">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="165" name="walk_south" type="Animation" gid="465" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="166" name="idle_north" type="Animation" gid="468" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="167" name="walk_north" type="Animation" gid="469" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="168" name="idle_right" type="Animation" gid="473" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="169" name="walk_right" type="Animation" gid="472" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="170" name="idle_left" type="Animation" gid="476" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="171" name="walk_left" type="Animation" gid="477" x="128" y="110" width="25" height="25" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="20" name="Pentagram" visible="0">
+  <object id="28" name="Pentagram Point 1" type="GameObject" x="7.5" y="280.5">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Pentagram Point 2" type="GameObject" x="7.5" y="62.5">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Pentagram Point 3" type="GameObject" x="55.5" y="33">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Pentagram Point 4" type="GameObject" x="455.5" y="33">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Pentagram Point 5" type="GameObject" x="504.5" y="62.5">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Pentagram Point 6" type="GameObject" x="504.5" y="279.5">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="195" name="default" type="Animation" gid="504" x="227.667" y="60.6667" width="54" height="54">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="196" name="Pentagram" type="GameObject" x="256" y="34">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="197" name="PentagramCmp" type="Pentagram" x="255.333" y="34" visible="0">
+   <point/>
+  </object>
+  <object id="198" name="AnimRend" type="AnimationRenderer" x="255.333" y="33.3333" visible="0">
+   <properties>
+    <property name="activeAnimation" value="default"/>
+    <property name="drawLayer" value="pentagram"/>
+    <property name="isEnabled" value="false"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="199" name="Rb" type="RigidBody" x="254" y="36" visible="0">
+   <properties>
+    <property name="ignore" value="wall,birdWall"/>
+    <property name="isEnabled" value="true"/>
+    <property name="physicsLayer" value="pentagram"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="200" name="Collider" type="CircleCollider" x="228.75" y="7.625" width="51.75" height="51.75">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="true"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="30" name="Projectile">
+  <object id="145" name="Sprite" type="SpriteRenderer" gid="502" x="113.333" y="109" width="6" height="13">
+   <properties>
+    <property name="drawLayer" value="projectile"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+  </object>
+  <object id="146" name="CircleColl" type="CircleCollider" x="114.633" y="100.971" width="3.40994" height="3.67224">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="148" name="Rb" type="RigidBody" x="116.646" y="103.156" visible="0">
+   <properties>
+    <property name="ignore" value="wall"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isKinematic" value="false"/>
+    <property name="mass" value="4"/>
+    <property name="physicsLayer" value="projectile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="149" name="Projectile" type="GameObject" x="116.333" y="102.5" visible="0">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="ProjCmp" type="Projectile" x="116.396" y="102.188">
+   <properties>
+    <property name="isEnabled" value="false"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="26" name="Bird">
+  <object id="142" name="blood-splatter" type="Animation" gid="497" x="241.826" y="172.439" width="26.6364" height="26.6364">
+   <properties>
+    <property name="isLoopable" value="false"/>
+   </properties>
+  </object>
+  <object id="105" name="walk_south" type="Animation" gid="481" x="238.372" y="177.712" width="32" height="32">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="106" name="walk_right" type="Animation" gid="485" x="238.372" y="177.712" width="32" height="32" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="107" name="walk_north" type="Animation" gid="489" x="238.372" y="177.712" width="32" height="32" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="108" name="walk_left" type="Animation" gid="493" x="238.372" y="177.712" width="32" height="32" visible="0">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="109" name="Bird" type="GameObject" x="254.872" y="160.712" visible="0">
+   <properties>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="110" name="AnimRend" type="AnimationRenderer" x="254.372" y="160.212" visible="0">
+   <properties>
+    <property name="activeAnimation" value="walk_south"/>
+    <property name="drawLayer" value="bird"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="Rb" type="RigidBody" x="255.008" y="161.53" visible="0">
+   <properties>
+    <property name="ignore" value=""/>
+    <property name="isEnabled" value="true"/>
+    <property name="isKinematic" value="false"/>
+    <property name="mass" value="0.0025"/>
+    <property name="physicsLayer" value="bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Shadow" type="SpriteRenderer" gid="496" x="244.008" y="184.531" width="22" height="22">
+   <properties>
+    <property name="drawLayer" value="shadow"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isVisible" value="true"/>
+   </properties>
+  </object>
+  <object id="111" name="CircleColl" type="CircleCollider" x="250.657" y="158.531" width="8.62433" height="8.6922">
+   <properties>
+    <property name="drawLayer" value="collider"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTrigger" value="false"/>
+    <property name="isVisible" value="false"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="141" name="BirdCmp" type="Bird" x="254.735" y="161.712" visible="0">
+   <properties>
+    <property name="isEnabled" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

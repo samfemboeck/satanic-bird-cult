@@ -1,0 +1,101 @@
+Renderer.1 {
+    backgroundcolor = transparent;
+    bordercolor = #3C3C3C;
+    borders = (0, 0, 0, 0);
+    textcolor = white;
+    texturebackground = None;
+}
+
+Panel.Panel1 {
+    Size = (100%, 100%);
+
+    Renderer {
+        backgroundcolor = black;
+        bordercolor = black;
+        texturebackground = None;
+    }
+}
+
+Picture.Picture1 {
+    Position = (50% - (0.5 * width), 18%);
+    Size = (286, 108.021);
+
+    Renderer {
+        texture = "../assets/title.png";
+        transparenttexture = false;
+    }
+}
+
+Label.play {
+    HorizontalAlignment = Center;
+    Position = (50% - (0.5 * width), 45%);
+    ScrollbarPolicy = Never;
+    Size = (100, 33);
+    Text = Play;
+    TextSize = 25;
+    VerticalAlignment = Center;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        texturebackground = None;
+    }
+}
+
+Label.exit {
+    HorizontalAlignment = Center;
+    Position = (50% - (0.5 * width), 65%);
+    ScrollbarPolicy = Never;
+    Size = (200, 33);
+    Text = Quit;
+    TextSize = 25;
+    VerticalAlignment = Center;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        texturebackground = None;
+    }
+}
+
+Label.info {
+    HorizontalAlignment = Center;
+    Position = (50% - (0.5 * width), 55%);
+    ScrollbarPolicy = Never;
+    Size = (200, 33);
+    Text = Controls;
+    TextSize = 25;
+    VerticalAlignment = Center;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = white;
+        texturebackground = None;
+    }
+}
+
+Label.p1connect {
+    AutoSize = true;
+    Position = (23% - (0.5 * width), 80%);
+    ScrollbarPolicy = Never;
+    Size = (186.8, 27);
+    Text = "P1 Not Connected";
+    TextSize = 20;
+    renderer = &1;
+}
+
+Label.p2connect {
+    AutoSize = true;
+    Position = (77% - (0.5 * width), 80%);
+    ScrollbarPolicy = Never;
+    Size = (186.8, 27);
+    Text = "P2 Not Connected";
+    TextSize = 20;
+    renderer = &1;
+}

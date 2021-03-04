@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="1920" tileheight="1080" infinite="0" nextlayerid="4" nextobjectid="5">
+ <tileset firstgid="1" name="character" tilewidth="16" tileheight="16" tilecount="16" columns="8">
+  <image source="textures/character.png" width="128" height="32"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="200"/>
+    <frame tileid="2" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <objectgroup id="3" name="Winner">
+  <object id="1" name="idle" type="Animation" gid="1" x="759.636" y="615" width="384.5" height="384.5">
+   <properties>
+    <property name="isLoopable" value="true"/>
+   </properties>
+  </object>
+  <object id="2" name="AnimRend" type="AnimationRenderer" x="951.515" y="390.909">
+   <properties>
+    <property name="activeAnimation" value="idle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Winner" type="GameObject" x="954.545" y="378.788">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

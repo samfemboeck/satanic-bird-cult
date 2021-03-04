@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="1920" tileheight="1080" infinite="0" nextlayerid="3" nextobjectid="4">
+ <tileset firstgid="1" name="title" tilewidth="556" tileheight="210" tilecount="1" columns="1">
+  <image source="title.png" width="556" height="210"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <objectgroup id="2" name="Title">
+  <object id="2" name="Title" type="SpriteRenderer" gid="1" x="655.26" y="341.345" width="556" height="210"/>
+  <object id="3" name="Title" type="GameObject" x="927.2" y="236.345">
+   <properties>
+    <property name="isDebugDraw" value="fals"/>
+    <property name="isEnabled" value="true"/>
+    <property name="isTemplate" value="false"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
